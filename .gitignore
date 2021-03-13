@@ -1,3 +1,4 @@
 /node_modules/
-/lib/
+# only for the INSTALLABLE branch!
+# /lib/
 .DS_Store

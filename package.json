@@ -20,7 +20,7 @@
   "scripts": {
     "test": "prettier --check \"src/**/*\" --end-of-line auto && jest",
     "prepare": "npx tsc",
-	"postinstall": "npx tsc",
+    "postinstall": "npx tsc",
     "stubs": "cd stubs && shx rm -f windows.exe macos linux && cross-env GOOS=windows go build -o windows.exe stub.go && shx echo >> windows.exe && shx echo \"### CAXA ###\" >> windows.exe && cross-env GOOS=darwin go build -o macos stub.go && shx echo >> macos && shx echo \"### CAXA ###\" >> macos && cross-env GOOS=linux go build -o linux stub.go && shx echo >> linux && shx echo \"### CAXA ###\" >> linux"
   },
   "dependencies": {
